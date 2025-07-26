@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LiveChat Widget Test</title>
+</head>
+<body>
+  <h1>Hello 👋</h1>
+  <p>This is a test page for the LiveChat widget.</p>
+
+  <!-- 👇 Paste the LiveChat widget code snippet here -->
+  <script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = YOUR_LICENSE_ID; // insert license ID here
+    (function() {
+      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+      lc.src = 'https://cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    })();
+  </script>
+</body>
+</html>
